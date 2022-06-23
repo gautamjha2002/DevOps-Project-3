@@ -1,3 +1,3 @@
 FROM tomcat:jre8
-COPY Deploy_On_Tomcat_Container/target/api.war /usr/local/tomcat/webapps
+COPY /var/lib/jenkins/workspace/Deploy_On_Tomcat_Container/target /usr/local/tomcat/webapps
 CMD ["catalina.sh", "run"]
